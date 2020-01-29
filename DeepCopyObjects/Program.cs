@@ -11,24 +11,38 @@ namespace DeepCopyObjects
         // Entry point of program execution
         static void Main(string[] args)
         {
-            // Create and print sample Employee
-            Employee emp = CreateEmployeeObject();
-            WriteLine(emp);
+            try
+            {
+                // Create and print sample Employee
+                Employee emp = CreateEmployeeObject();
+                WriteLine(emp);
 
-            PrintCopyMethods();
+                PrintCopyMethods();
+                WriteLine("Choose Copy Method");
 
-            WriteLine("Choose Copy Method");
+                string copyMethod = ReadLine();
+                int copyMethodValue = ValidateAndConvertInput(copyMethod,
+                                                                maxRange: SystemConstants.MaxCopyMethods,
+                                                                message: SystemConstants.InvalidMethodError);
 
-            string copyMethod = ReadLine();
-            int copyMethodValue = ValidateAndConvertInput(copyMethod, 
-                                                            maxRange: SystemConstants.MaxCopyMethods, 
-                                                            message: SystemConstants.InvalidMethodError);
+                ICopyFactory copyFactory = CopyFactory.GetCopyMethod((CopyMethodsEnum)copyMethodValue); //Manual parse with vaidation
 
-            ICopyFactory copyFactory = CopyFactory.GetCopyMethod((CopyMethodsEnum)copyMethodValue); //Manual parse with vaidation
-
-            //Creating Employee copy based on the user input method
-            Employee empCopy = copyFactory.CopyObject<Employee>(emp);
-            WriteLine(empCopy);
+                //Creating Employee copy based on the user input method
+                Employee empCopy = copyFactory.CopyObject<Employee>(emp);
+                WriteLine(empCopy);
+            }
+            // Handled Exceptions
+            catch(CustomException ce)
+            {
+                // Log Error
+                WriteLine(ce.Message);
+            }
+            // Unhandled Exceptions(Error)
+            catch(Exception e)
+            {
+                // Log Error
+                WriteLine(SystemConstants.GeneralErrorMessage);
+            }
 
             ReadKey();
         }

@@ -12,6 +12,7 @@ namespace DeepCopyObjects.CopyTechniques
             object copy;
             Type type = originalObject.GetType();
 
+            // If type is implementing IClonable then return its Clone implementation
             if (originalObject is ICloneable)
                 return (TObject)((ICloneable)originalObject).Clone();
 
