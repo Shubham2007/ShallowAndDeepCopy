@@ -1,0 +1,11 @@
+C:\Users\shubham.chauhan\source\repos\DeepCopyObjects\DeepCopyObjects\bin\Debug\netcoreapp2.1\DeepCopyObjects.deps.json
+C:\Users\shubham.chauhan\source\repos\DeepCopyObjects\DeepCopyObjects\bin\Debug\netcoreapp2.1\DeepCopyObjects.runtimeconfig.json
+C:\Users\shubham.chauhan\source\repos\DeepCopyObjects\DeepCopyObjects\bin\Debug\netcoreapp2.1\DeepCopyObjects.runtimeconfig.dev.json
+C:\Users\shubham.chauhan\source\repos\DeepCopyObjects\DeepCopyObjects\bin\Debug\netcoreapp2.1\DeepCopyObjects.dll
+C:\Users\shubham.chauhan\source\repos\DeepCopyObjects\DeepCopyObjects\bin\Debug\netcoreapp2.1\DeepCopyObjects.pdb
+C:\Users\shubham.chauhan\source\repos\DeepCopyObjects\DeepCopyObjects\obj\Debug\netcoreapp2.1\DeepCopyObjects.csprojAssemblyReference.cache
+C:\Users\shubham.chauhan\source\repos\DeepCopyObjects\DeepCopyObjects\obj\Debug\netcoreapp2.1\DeepCopyObjects.csproj.CoreCompileInputs.cache
+C:\Users\shubham.chauhan\source\repos\DeepCopyObjects\DeepCopyObjects\obj\Debug\netcoreapp2.1\DeepCopyObjects.AssemblyInfoInputs.cache
+C:\Users\shubham.chauhan\source\repos\DeepCopyObjects\DeepCopyObjects\obj\Debug\netcoreapp2.1\DeepCopyObjects.AssemblyInfo.cs
+C:\Users\shubham.chauhan\source\repos\DeepCopyObjects\DeepCopyObjects\obj\Debug\netcoreapp2.1\DeepCopyObjects.dll
+C:\Users\shubham.chauhan\source\repos\DeepCopyObjects\DeepCopyObjects\obj\Debug\netcoreapp2.1\DeepCopyObjects.pdb
